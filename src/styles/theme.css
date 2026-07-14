@@ -1,0 +1,122 @@
+:root {
+    --granate-oscuro: #701A30;
+    --rojo-vino: #A81E44;
+    --beige-claro: #DBC7A2;
+    --marron-dorado: #B58C56;
+    --gris-claro: #999999;
+    --gris-oscuro: #555555;
+    --blanco: #FFFFFF;
+    --fondo-pagina: #F5F5F5;
+    --sombra: 0 4px 16px rgba(112, 26, 48, 0.12);
+    --radio-borde: 10px;
+    --transicion: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--fondo-pagina);
+    color: var(--gris-oscuro);
+    line-height: 1.6;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radio-borde);
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transicion);
+}
+
+.btn-principal {
+    background-color: var(--granate-oscuro);
+    color: var(--blanco);
+}
+
+.btn-principal:hover {
+    background-color: var(--rojo-vino);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra);
+}
+
+.btn-secundario {
+    background-color: var(--beige-claro);
+    color: var(--granate-oscuro);
+}
+
+.btn-secundario:hover {
+    background-color: var(--marron-dorado);
+    color: var(--blanco);
+}
+
+.btn-peligro {
+    background-color: var(--rojo-vino);
+    color: var(--blanco);
+}
+
+.btn-peligro:hover {
+    background-color: #8F193A;
+}
+
+/* Formularios */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--gris-claro);
+    border-radius: var(--radio-borde);
+    font-size: 0.95rem;
+    transition: var(--transicion);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--granate-oscuro);
+    box-shadow: 0 0 0 3px rgba(112, 26, 48, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--granate-oscuro);
+}
+
+/* Tarjetas */
+.card {
+    background: var(--blanco);
+    border-radius: var(--radio-borde);
+    padding: 1.5rem;
+    box-shadow: var(--sombra);
+    margin-bottom: 1.5rem;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4 {
+    color: var(--granate-oscuro);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--granate-oscuro);
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+a:hover {
+    color: var(--rojo-vino);
+}
